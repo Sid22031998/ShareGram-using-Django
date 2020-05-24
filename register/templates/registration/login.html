@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Here</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	{% load crispy_forms_tags %}
+</head>
+<body>
+	<div class="section">
+		<div class="container">
+			<h1>Login</h1>
+			<hr>
+			<form method="POST" class="form-group">
+				{% csrf_token %}
+				{{form|crispy}}
+				<button type="submit" class="btn btn-success">Login</button>
+				<p>Don't have an account? Create one <a href="/register">Register Here</a></p>
+			</form>
+		</div>
+	</div>
+
+</body>
+</html>

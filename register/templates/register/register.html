@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	{% load crispy_forms_tags %}
+</head>
+<body>
+	<div class="section">
+		<div class="container">
+			<h1>Create an Account</h1>
+			<hr>
+
+			{% block content  %}
+				<form methos="POST" class="form-group">
+					{% csrf_token %}
+					{{form|crispy}}
+					<button type="submit" class="btn btn-success">Register</button>
+				</form>
+			{% endblock %}
+		</div>
+	</div>
+
+</body>
+</html>
