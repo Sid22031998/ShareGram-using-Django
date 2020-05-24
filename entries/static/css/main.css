@@ -1,0 +1,20 @@
+body{
+	margin:0;
+	padding:0;
+	background: url('xyz.jpg');
+	background-size: cover;
+	background-position: center;
+	font-family: sans-serif;
+	color: white;
+}
+
+strong{
+	font-family: sans-serif;
+	color: white;
+}
+
+button{
+	font-family: sans-serif;
+	color: white;
+	bac
+}
